@@ -1,6 +1,6 @@
 {
   "name": "strider-foodcritic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Foodcritic is a helpful lint tool you can use to check your Chef cookbooks for common problems.",
   "main": "webapp.js",
   "scripts": {
