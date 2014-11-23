@@ -1,5 +1,7 @@
 # strider-foodcritic
 
+![FoodCritic](https://raw.githubusercontent.com/logankoester/strider-foodcritic/master/static/banner.png)
+
 > [Foodcritic](http://www.foodcritic.io/) is a helpful lint tool you can use to check your [Chef](http://getchef.com/) cookbooks for common problems.
 
 [![Strider Build Status](http://ci.ldk.io/logankoester/strider-foodcritic/badge)](https://ci.ldk.io/logankoester/strider-foodcritic/)
