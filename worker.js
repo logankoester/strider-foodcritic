@@ -4,7 +4,7 @@ module.exports = {
 			env: {},
 			test: {
 				command: 'foodcritic',
-				args: ["-t " + config.tags, "-f " + config.epic_fail_tags, "."]
+				args: ["-t", config.tags, "-f", config.epic_fail_tags, "."]
 			}
 		});
 	},

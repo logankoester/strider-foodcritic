@@ -41,8 +41,8 @@ describe("foodcritic worker", function() {
 		};
 		process.env.strider_server_name = "http://example.com";
 		config = {
-			tags: "footag",
-			epic_fail_tags: "bartag"
+			tags: "footag ~badtag",
+			epic_fail_tags: "bartag ~badtag"
 		};
 
 		prepareWorker(done);
@@ -52,9 +52,11 @@ describe("foodcritic worker", function() {
 		var setup = work();
 		expect(typeof setup.test).to.equal('object');
 		expect(setup.test.command).to.equal('foodcritic');
-		expect(setup.test.args[0]).to.equal('-t footag');
-		expect(setup.test.args[1]).to.equal('-f bartag');
-		expect(setup.test.args[2]).to.equal('.');
+		expect(setup.test.args[0]).to.equal('-t');
+		expect(setup.test.args[1]).to.equal('footag ~badtag');
+		expect(setup.test.args[2]).to.equal('-f');
+		expect(setup.test.args[3]).to.equal('bartag ~badtag');
+		expect(setup.test.args[4]).to.equal('.');
 	});
 
 });
