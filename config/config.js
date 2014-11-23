@@ -5,7 +5,7 @@ var app = window.app;
 app.controller('FoodcriticCtrl', ['$scope', function ($scope) {
 	$scope.saving = false;
 
-	$scope.$watch('configs[branch.name].template.config', function (value) {
+	$scope.$watch('configs[branch.name].foodcritic.config', function (value) {
 		$scope.config = value || {
 			tags: 'any',
 			epic_fail_tags: 'any'
