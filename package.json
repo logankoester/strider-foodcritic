@@ -1,0 +1,39 @@
+{
+  "name": "strider-foodcritic",
+  "version": "1.0.0",
+  "description": "Foodcritic is a helpful lint tool you can use to check your Chef cookbooks for common problems.",
+  "main": "webapp.js",
+  "scripts": {
+    "test": "mocha -R spec --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/logankoester/strider-foodcritic.git"
+  },
+  "keywords": [
+    "strider",
+    "plugin",
+    "chef",
+    "linter",
+    "foodcritic"
+  ],
+  "author": "Logan Koester",
+  "license": "MIT",
+  "dependencies": {},
+  "strider": {
+    "type": "job",
+    "id": "foodcritic",
+    "title": "Foodcritic",
+    "worker": "worker.js",
+    "webapp": "webapp.js",
+    "icon": "icon.png",
+    "config": {
+      "controller": "FoodcriticCtrl"
+    }
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1",
+    "sinon-chai": "^2.5.0"
+  }
+}

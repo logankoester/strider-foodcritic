@@ -1,0 +1,23 @@
+<div id="template" class="well">
+  <h2>Foodcritic</h2>
+  <br/>
+  <br/>
+  <p class="help-text">
+    Foodcritic comes with a bunch of rules built-in. You will probably find some of them useful and others annoying. The trick to only running the rules you actually care about are what foodcritic calls tags.
+  </p>
+  <p>See <a href="http://www.foodcritic.io/#choosing-rules-to-run">"Choosing Rules To Run"</a><p>
+  <h3>Tags</h3>
+  <div class="row-fluid">
+    <div class="span12">
+      <input ui-refresh="selectedTab" ng-model="config.tags" />
+    </div>
+  </div>
+  <br/>
+  <h3>Epic Fail Tags</h3>
+  <div class="row-fluid">
+    <div class="span12">
+      <input ui-refresh="selectedTab" ng-model="config.epic_fail_tags" />
+    </div>
+  </div>
+  <button ng-click="save()" class="btn btn-primary">Save</button>
+</div>
